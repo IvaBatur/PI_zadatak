@@ -91,7 +91,7 @@ const najskupljaStavka = computed(() => {
   <div class="kosarica-container">
     <h2>Košarica</h2>
 
-    <div class="stavka">
+    <div class="stavka" :class="{ 'najskuplja': najskupljaStavka === 'Jabuka' }">
       <img :src="slike.Jabuka" alt="Jabuka">
       <div class="info">
         <p><strong>Jabuka</strong></p>
@@ -100,7 +100,7 @@ const najskupljaStavka = computed(() => {
       </div>
     </div>
 
-    <div class="stavka">
+    <div class="stavka" :class="{ 'najskuplja': najskupljaStavka === 'Mrkva' }">
       <img :src="slike.Mrkva" alt="Mrkva">
       <div class="info">
         <p><strong>Mrkva</strong></p>
@@ -119,7 +119,7 @@ const najskupljaStavka = computed(() => {
     </div>
 
     
-    <div class="stavka">
+    <div class="stavka" :class="{ 'najskuplja': najskupljaStavka === 'Sir' }">
       <img :src="slike.Sir" alt="Sir">
       <div class="info">
         <p><strong>Sir</strong></p>
